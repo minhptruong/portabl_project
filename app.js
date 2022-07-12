@@ -33,10 +33,19 @@ app.post("/derive_proof", async (req, res, next) => {
  	res.json(results);
 });
 
-app.post("/verify", async (req, res, next) => {
+app.post("/verify_proof", async (req, res, next) => {
 	console.log("calling /verify");
 
  	var results = await verify_proof(req.body);
+ 	verifier_data.addData(results);
+
+ 	res.json(results);
+});
+
+app.post("/verify_document", async (req, res, next) => {
+	console.log("calling /verify");
+
+ 	var results = await verify_document(req.body);
  	verifier_data.addData(results);
 
  	res.json(results);
