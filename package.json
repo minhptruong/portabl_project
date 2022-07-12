@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@mattrglobal/jsonld-signatures-bbs": "^1.0.1",
+    "@types/node": "^18.0.3",
+    "express": "^4.18.1",
+    "jsonld-signatures": "5.0.1",
+    "ts-node": "^10.8.2"
+  },
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
